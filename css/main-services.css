@@ -462,14 +462,15 @@
     padding-bottom: 5px;
   }
   .minutes__btns {
-    /* display: block; */
-    /* justify-content: stretch; */
     flex-wrap: nowrap;
     max-width: 100%;
     padding-right: 25px;
-    height: 36px;
+    height: 66px;
     width: 600px;
     overflow: auto;
+  }
+  .minutes__btns::-webkit-scrollbar {
+    color: transparent;
   }
 }
 @media (max-width: 600px) {

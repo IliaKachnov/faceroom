@@ -1,5 +1,13 @@
+@font-face {
+  font-family: 'ArialNarrow';
+  src: url('../fonts/arialnarrow.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family:'Arial Narrow';
+  font-family: 'ArialNarrow';
+  /* font-family:'Arial Narrow', arial; */
 }
 
 .wrapper {

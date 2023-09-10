@@ -175,6 +175,25 @@ MenuItems.forEach((MenuItem) => {
   })
 })
 
+const dropdownMenuHome = document.querySelector('.menu__dropdown.home');
+const dropdownMenuHomeShow = document.querySelector('.dropdown-menu.home');
+
+dropdownMenuHome.addEventListener('click', () => {
+  dropdownMenuHome.classList.toggle('show');
+  dropdownMenuHomeShow.classList.toggle('show');
+})
+
+const MenuHomeItems = document.querySelectorAll('.home__li');
+
+MenuHomeItems.forEach((MenuHomeItem) => {
+  MenuHomeItem.addEventListener('click', () => {
+    const dropdownLocation = document.querySelector('.dropdown__location.home');
+    dropdownLocation.textContent = MenuHomeItem.textContent;
+    footerDropdown.classList.remove('show');
+    dropdownMenuFooter.classList.remove('show');
+  })
+})
+
 
 
 
@@ -203,25 +222,25 @@ document.addEventListener('click', (event) => {
     });
 });
 
-cosmetologyBtn.addEventListener('click', () => {
-    cosmetologyDropdown.style.display = 'block';
-});
+// cosmetologyBtn.addEventListener('click', () => {
+//     cosmetologyDropdown.style.display = 'block';
+// });
 
 
-const sortBtn = document.querySelector('.sort__btn.cosm');
-const sortBtnDropdown = document.querySelector('.sort__btn-dropdown');
-const sortDropdown = document.querySelector('.sort__dropdown');
+// const sortBtn = document.querySelector('.sort__btn.cosm');
+// const sortBtnDropdown = document.querySelector('.sort__btn-dropdown');
+// const sortDropdown = document.querySelector('.sort__dropdown');
 
 
-sortBtn.addEventListener('click', () => {
-  sortBtn.classList.toggle('active');
-  sortBtnDropdown.classList.toggle("active")
-  if (sortBtnDropdown.classList.contains('active')) {
-    sortBtnDropdown.style.display = 'block';
-  } else {
-    sortBtnDropdown.style.display = 'none';
-  }
-  sortDropdown.classList.toggle('active');
-});
+// sortBtn.addEventListener('click', () => {
+//   sortBtn.classList.toggle('active');
+//   sortBtnDropdown.classList.toggle("active")
+//   if (sortBtnDropdown.classList.contains('active')) {
+//     sortBtnDropdown.style.display = 'block';
+//   } else {
+//     sortBtnDropdown.style.display = 'none';
+//   }
+//   sortDropdown.classList.toggle('active');
+// });
 
 
