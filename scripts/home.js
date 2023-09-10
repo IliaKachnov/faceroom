@@ -175,8 +175,9 @@ MenuItems.forEach((MenuItem) => {
   })
 })
 
-const dropdownMenuHome = document.querySelector('.menu__dropdown.home');
+const dropdownMenuHome = document.querySelector('.nav__dropdown.home');
 const dropdownMenuHomeShow = document.querySelector('.dropdown-menu.home');
+console.log(dropdownMenuHome);
 
 dropdownMenuHome.addEventListener('click', () => {
   dropdownMenuHome.classList.toggle('show');
