@@ -15,7 +15,7 @@
   right: 0;
 }
 .nav__wrapper.home.active {
-  overflow: auto;
+  overflow: visible;
 }
 .nav__wrapper {
   position: fixed;
