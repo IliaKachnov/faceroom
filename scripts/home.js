@@ -191,7 +191,7 @@ minuteButtons.forEach(function(button) {
 
 const dropdowns = document.querySelectorAll('.dropdown-content-sort');
 const cosmetologyBtn = document.querySelector('.sort__btn.cosm');
-const cosmetologyDropdown = cosmetologyBtn.nextElementSibling;
+// const cosmetologyDropdown = cosmetologyBtn.nextElementSibling;
 
 document.addEventListener('click', (event) => {
     const target = event.target;
