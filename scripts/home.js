@@ -135,10 +135,6 @@ const modalDeleteCancelBtns = document.querySelectorAll('.text-wrapper__btn');
 
 const openMenuNav = document.querySelector('#open-menu-nav')
 
-// openMenuNav.addEventListener('click', () => {
-//   modalDelete.classList.add('open');
-//   document.body.style.overflow = 'hidden';
-// });
 
 
 closeDeleteModal.addEventListener('click', () => {
@@ -177,7 +173,7 @@ MenuItems.forEach((MenuItem) => {
 
 const dropdownMenuHome = document.querySelector('.nav__dropdown.home');
 const dropdownMenuHomeShow = document.querySelector('.dropdown-menu.home');
-console.log(dropdownMenuHome);
+
 
 dropdownMenuHome.addEventListener('click', () => {
   dropdownMenuHome.classList.toggle('show');
@@ -211,7 +207,7 @@ minuteButtons.forEach(function(button) {
 
 const dropdowns = document.querySelectorAll('.dropdown-content-sort');
 const cosmetologyBtn = document.querySelector('.sort__btn.cosm');
-// const cosmetologyDropdown = cosmetologyBtn.nextElementSibling;
+
 
 document.addEventListener('click', (event) => {
     const target = event.target;
@@ -222,26 +218,5 @@ document.addEventListener('click', (event) => {
         }
     });
 });
-
-// cosmetologyBtn.addEventListener('click', () => {
-//     cosmetologyDropdown.style.display = 'block';
-// });
-
-
-// const sortBtn = document.querySelector('.sort__btn.cosm');
-// const sortBtnDropdown = document.querySelector('.sort__btn-dropdown');
-// const sortDropdown = document.querySelector('.sort__dropdown');
-
-
-// sortBtn.addEventListener('click', () => {
-//   sortBtn.classList.toggle('active');
-//   sortBtnDropdown.classList.toggle("active")
-//   if (sortBtnDropdown.classList.contains('active')) {
-//     sortBtnDropdown.style.display = 'block';
-//   } else {
-//     sortBtnDropdown.style.display = 'none';
-//   }
-//   sortDropdown.classList.toggle('active');
-// });
 
 
