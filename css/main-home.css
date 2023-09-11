@@ -1364,6 +1364,9 @@
     overflow-x: auto;
     gap: 10px;
   }
+  .blog__items::-webkit-scrollbar {
+    display: none;
+  }
 }
 @media (max-width: 730px) {
   .service__container {
@@ -1460,6 +1463,9 @@
   .reviews__container {
     justify-content: start;
     overflow: auto;
+  }
+  .reviews__container::-webkit-scrollbar {
+    display: none;
   }
   .reviews__reviews {
     justify-content: space-around;
@@ -1881,6 +1887,9 @@
   .values__items {
     overflow-y: hidden;
     overflow-x: auto;
+  }
+  .values__items::-webkit-scrollbar {
+    display: none;
   }
   .values__item,
   .values__item-text {
