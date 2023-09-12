@@ -118,7 +118,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
   }
   .home__download {
     display: block;

@@ -36,7 +36,7 @@ window.addEventListener('scroll', function() {
 
     if (scrollY >= 300) {
         navbar.classList.add('active')
-        navbar.style.height = '50px';
+        navbar.style.height = '61px';
     } else {
         navbar.classList.remove('active')
         navbar.style.height = '0'; 
@@ -80,6 +80,23 @@ for (let i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+const founders = document.querySelectorAll('.founder');
+
+founders.forEach(function(founder) {
+    founder.addEventListener('click', function() {
+        const bioWrapper = founder.querySelector('.founder__bio-wrapper');
+        if (bioWrapper) {
+            if (bioWrapper.classList.contains('active')) {
+                bioWrapper.classList.remove('active');
+            } else {
+                bioWrapper.classList.add('active');
+            }
+        }
+    });
+});
+
+
 
 const minutesBtns = document.querySelectorAll('.minutes__btn');
 
@@ -137,7 +154,6 @@ const openMenuNav = document.querySelector('#open-menu-nav')
 
 
 
-
 closeDeleteModal.addEventListener('click', () => {
   modalDelete.classList.remove('open')
   document.body.style.overflow = 'visible';
@@ -174,7 +190,6 @@ MenuItems.forEach((MenuItem) => {
 
 const dropdownMenuHome = document.querySelector('.nav__dropdown.home');
 const dropdownMenuHomeShow = document.querySelector('.dropdown-menu.home');
-console.log(dropdownMenuHome);
 
 dropdownMenuHome.addEventListener('click', () => {
   dropdownMenuHome.classList.toggle('show');
@@ -209,7 +224,6 @@ minuteButtons.forEach(function(button) {
 const dropdowns = document.querySelectorAll('.dropdown-content-sort');
 const cosmetologyBtn = document.querySelector('.sort__btn.cosm');
 
-
 document.addEventListener('click', (event) => {
     const target = event.target;
 
@@ -218,6 +232,43 @@ document.addEventListener('click', (event) => {
             dropdown.style.display = 'none';
         }
     });
+});
+
+
+const scrollLeftButton = document.querySelector('#scroll-left-values');
+const scrollRightButton = document.querySelector('#scroll-right-values');
+const values = document.querySelector('.values__items');
+
+scrollLeftButton.addEventListener('click', () => {
+  values.scrollLeft -= 150;
+});
+
+scrollRightButton.addEventListener('click', () => {
+  values.scrollLeft += 150;
+});
+
+const scrollLeftButtonReviews = document.querySelector('#scroll-left-reviews');
+const scrollRightButtonReviews = document.querySelector('#scroll-right-reviews');
+const reviews = document.querySelector('.reviews__container');
+
+scrollLeftButtonReviews.addEventListener('click', () => {
+  reviews.scrollLeft -= 150;
+});
+
+scrollRightButtonReviews.addEventListener('click', () => {
+  reviews.scrollLeft += 150;
+});
+
+const scrollLeftButtonBlog = document.querySelector('#scroll-left-blog');
+const scrollRightButtonBlog = document.querySelector('#scroll-right-blog');
+const blog = document.querySelector('.blog__items');
+
+scrollLeftButtonBlog.addEventListener('click', () => {
+  blog.scrollLeft -= 150;
+});
+
+scrollRightButtonBlog.addEventListener('click', () => {
+  blog.scrollLeft += 150;
 });
 
 

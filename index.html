@@ -7,15 +7,19 @@
   <link rel="stylesheet" href="css/styles-home.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <!-- <script src="scripts/blog.js" defer></script> -->
   <script src="scripts/home.js" defer></script>
+  <meta property="og:title" content="FACEROOM">
+  <meta property="og:description" content="description">
+  <!-- <meta property="og:url" content="URL_ВАШЕЙ_СТРАНИЦЫ"> -->
+  <!-- <meta property="og:image" content="URL_ИЗОБРАЖЕНИЯ"> -->
+  <link rel="icon" href="img/fav.png" type="image/png">
   <title>Faceroom</title>
 </head>
 <body>
   <div class="wrapper">
     <nav class="nav">
       <div class="nav__wrapper home">
-        <img class="nav__logo" src="img/logo-faceroom.png">
+        <a href="index.html"><img class="nav__logo" src="img/logo-faceroom.png"></a>
         <div class="nav__section">
           <div id="dropdown" class="nav__dropdown">
             <h2 class="dropdown__location top">UAE, DUBAI</h2>
@@ -46,7 +50,7 @@
         </div>
         <div class="home__intro">
           <div class="home__nav">
-            <img class="home__logo" src="img/logo-faceroom.png">
+            <a href="index.html"><img class="home__logo" src="img/logo-faceroom.png"></a>
             <div class="nav__section">
               <div id="dropdown" class="nav__dropdown home">
                 <h2 class="dropdown__location top home">UAE, DUBAI</h2>
@@ -239,7 +243,7 @@
             </div>
           </div>
           <div class="panel__book-wrapper"> 
-            <a class="prices__all" href="#">VIEW ALL</a>
+            <a class="prices__all" href="services.html">VIEW ALL</a>
           </div>
         </div>
       </section>
@@ -248,7 +252,11 @@
         <div class="values__wrapper">
           <div class="values__title-wrapper">
             <p class="values__these">these are our</p>
-            <h1 class="values__core">core values</h1>
+            <div class="values__arrows">
+              <img id="scroll-left-values" class="small__arrow" src="img/small-arrow-left.svg">
+              <h1 class="values__core">core values</h1>
+              <img id="scroll-right-values" class="small__arrow" src="img/small-arrow-right.svg">
+            </div>
           </div>
           <div class="values__items">
             <div class="values__item price">
@@ -281,12 +289,18 @@
             <div class="founder">
               <h2 class="founder__name">Evgeniya sorokina</h2>
               <img class="founder__photo" src="img/evgeniya.png" alt="Faceroom">
+              <div class="founder__bio-wrapper">
+                <img class="founder__line" src="img/founders-line.png" alt="Faceroom">
+                <p class="founder__bio">I was created in 2023 in Russia to help users with their requests and tasks. I have artificial intelligence and can process a large amount of information in real time. My goal is to make people's lives easier and more convenient by providing them with quality answers to their questions and problems.</p>
+              </div>
             </div>
             <div class="founder">
               <h2 class="founder__name">Polina frolova</h2>
               <img class="founder__photo" src="img/polina.png" alt="Faceroom">
-              <img class="founder__line" src="img/founders-line.png" alt="Faceroom">
-              <p class="founder__bio">I was created in 2023 in Russia to help users with their requests and tasks. I have artificial intelligence and can process a large amount of information in real time. My goal is to make people's lives easier and more convenient by providing them with quality answers to their questions and problems.</p>
+              <div class="founder__bio-wrapper">
+                <img class="founder__line" src="img/founders-line.png" alt="Faceroom">
+                <p class="founder__bio">I was created in 2023 in Russia to help users with their requests and tasks. I have artificial intelligence and can process a large amount of information in real time. My goal is to make people's lives easier and more convenient by providing them with quality answers to their questions and problems.</p>
+              </div>
             </div>
             <div class="founder__about">
               <p class="founder__subtitle">We are </p>
@@ -301,10 +315,22 @@
         <div class="swiper__wrapper gift">
           <div class="swiper mySwiper1">
             <div class="swiper-wrapper banner">
-              <div class="swiper-slide buy"><h1>GIFT CARD</h1></div>
-              <div class="swiper-slide gift"><h1>THE GIFT OF SKIN CONFIDENCE</h1></div>
-              <div class="swiper-slide buy"><h1>GIFT CARD</h1></div>
-              <div class="swiper-slide gift"><h1>THE GIFT OF SKIN CONFIDENCE</h1></div>
+              <div class="swiper-slide buy">
+                <h1>GIFT CARD</h1>
+                <a class="banner__look" href="promo.html">LOOK AT</a>
+              </div>
+              <div class="swiper-slide gift">
+                <h1>THE GIFT OF SKIN CONFIDENCE</h1>
+                <a class="banner__look" href="promo.html">LOOK AT</a>
+              </div>
+              <div class="swiper-slide buy">
+                <h1>GIFT CARD</h1>
+                <a class="banner__look" href="promo.html">LOOK AT</a>
+              </div>
+              <div class="swiper-slide gift">
+                <h1>THE GIFT OF SKIN CONFIDENCE</h1>
+                <a class="banner__look" href="promo.html">LOOK AT</a>
+              </div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -317,9 +343,9 @@
             <p class="reviews__subtitle">THE BEST</p>
             <div class="reviews__reviews">
               <img class="reviews__arrow" class="reviews__arrow-left" src="img/reviews-arrow-left.png" alt="Faceroom">
-              <img class="small__arrow" src="img/small-arrow-left.svg">
+              <img id="scroll-left-reviews" class="small__arrow" src="img/small-arrow-left.svg">
               <h1 class="reviews__title">REVIEWS</h1>
-              <img class="small__arrow" src="img/small-arrow-right.svg">
+              <img id="scroll-right-reviews" class="small__arrow" src="img/small-arrow-right.svg">
               <img class="reviews__arrow" src="img/reviews-arrow-right.png" alt="Faceroom">
             </div>
           </div>
@@ -346,9 +372,9 @@
             <p class="blog__subtitle">the best</p>
             <div class="blog__blog"> 
               <img class="blog__arrow" src="img/reviews-arrow-left.png" alt="Faceroom">
-              <img class="small__arrow" src="img/small-arrow-left.svg">
+              <img id="scroll-left-blog" class="small__arrow" src="img/small-arrow-left.svg">
               <h1 class="blog__title">BLOG</h1>
-              <img class="small__arrow" src="img/small-arrow-right.svg">
+              <img id="scroll-right-blog"  class="small__arrow" src="img/small-arrow-right.svg">
               <img class="blog__arrow" src="img/reviews-arrow-right.png" alt="Faceroom">
             </div>
           </div>
@@ -505,10 +531,10 @@
 
           <div class="socials">
             <div class="social__wrapper-follow">
-              <a href="#"><p class="social__follow">follow us</p>
+              <a href="https://www.instagram.com/face.room/"><p class="social__follow">follow us</p>
                 <img class="social__icon" src="img/inst-icon.png" alt="Faceroom"></a>
             </div>
-            <p class="social__faceroom">@faceroom</p>
+            <a href="https://www.instagram.com/face.room/"><p class="social__faceroom">@faceroom</p></a>
           </div>
         </div>
       </section>
@@ -557,21 +583,21 @@
             <input class="form__send" type="submit" value="SEND">
           </form>
           <div class="deposit__wrapper">
-            <p class="deposit">Deposit</p>
-            <p class="certificate">certificate</p>
+            <a href="#"><p class="deposit">Deposit</p></a>
+            <a href="https://o1259.yclients.com/loyalty"><p class="certificate">certificate</p></a>
           </div>
           <div class="deposit__mobile-wrapper">
             <div class="deposit__item">
               <p class="deposit__special">special/</p>
-              <p class="deposit__title">Deposit</p>
+              <a href="#"><p class="deposit__title">Deposit</p></a>
             </div>
             <div class="deposit__item">
               <p class="deposit__special">special/</p>
-              <p class="deposit__title">certificate</p>
+              <a href="https://o1259.yclients.com/loyalty"><p class="deposit__title">certificate</p></a>
             </div>
             <div class="deposit__item">
-              <p class="deposit__special">follow us/</p>
-              <p class="deposit__title">@faceroom</p>
+              <a href="https://www.instagram.com/face.room/"><p class="deposit__special">follow us/</p></a>
+              <a href="https://www.instagram.com/face.room/"><p class="deposit__title">@faceroom</p></a>
             </div>
           </div>
           <div class="footer__icons">

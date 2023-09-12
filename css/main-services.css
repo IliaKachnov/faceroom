@@ -579,4 +579,20 @@
   .accordion__wrapper {
     flex-direction: column;
   }
+  .service__home {
+    background-image: url("../img/services-small.png");
+    width: 288px;
+    height: 447px;
+  }
+  .service__home-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .sort {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .production {
+    margin-top: 10px;
+  }
 }

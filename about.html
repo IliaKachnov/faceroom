@@ -8,13 +8,18 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script src="scripts/about.js" defer></script>
+  <meta property="og:title" content="FACEROOM">
+  <meta property="og:description" content="description">
+  <!-- <meta property="og:url" content="URL_ВАШЕЙ_СТРАНИЦЫ"> -->
+  <!-- <meta property="og:image" content="URL_ИЗОБРАЖЕНИЯ"> -->
+  <link rel="icon" href="img/fav.png" type="image/png">
   <title>Faceroom Blog</title>
 </head>
 <body>
   <div class="wrapper">
     <nav class="nav">
       <div class="nav__wrapper">
-        <img class="nav__logo" src="img/logo-faceroom.png">
+        <a href="index.html"><img class="nav__logo" src="img/logo-faceroom.png"></a>
         <div class="nav__section">
           <div id="dropdown" class="nav__dropdown">
             <h2 class="dropdown__location top">UAE, DUBAI</h2>
@@ -83,12 +88,18 @@
             <div class="founder">
               <h2 class="founder__name">Evgeniya sorokina</h2>
               <img class="founder__photo" src="img/evgeniya.png" alt="Faceroom">
+              <div class="founder__bio-wrapper">
+                <img class="founder__line" src="img/founders-line.png" alt="Faceroom">
+                <p class="founder__bio">I was created in 2023 in Russia to help users with their requests and tasks. I have artificial intelligence and can process a large amount of information in real time. My goal is to make people's lives easier and more convenient by providing them with quality answers to their questions and problems.</p>
+              </div>
             </div>
             <div class="founder">
               <h2 class="founder__name">Polina frolova</h2>
               <img class="founder__photo polina" src="img/polina.png" alt="Faceroom">
-              <img class="founder__line" src="img/founders-line.png" alt="Faceroom">
-              <p class="founder__bio">I was created in 2023 in Russia to help users with their requests and tasks. I have artificial intelligence and can process a large amount of information in real time. My goal is to make people's lives easier and more convenient by providing them with quality answers to their questions and problems.</p>
+              <div class="founder__bio-wrapper">
+                <img class="founder__line" src="img/founders-line.png" alt="Faceroom">
+                <p class="founder__bio">I was created in 2023 in Russia to help users with their requests and tasks. I have artificial intelligence and can process a large amount of information in real time. My goal is to make people's lives easier and more convenient by providing them with quality answers to their questions and problems.</p>
+              </div>
             </div>
             <div class="founder__about">
               <p class="founder__subtitle">We are </p>
@@ -105,10 +116,10 @@
             <p class="values__these">history</p>
             <div class="values__company">
               <img class="values__arrow" src="img/large-arrow-left.png">
-              <img class="values__arrow-small" src="img/small-arrow-left.svg">
+              <img id="scroll-left" class="values__arrow-small" src="img/small-arrow-left.svg">
               <h1 class="values__core">company</h1>
               <img class="values__arrow" src="img/large-arrow-right.png" >
-              <img class="values__arrow-small" src="img/small-arrow-right.svg">
+              <img id="scroll-right" class="values__arrow-small" src="img/small-arrow-right.svg">
             </div>
           </div>
           <div class="values__items">

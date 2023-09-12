@@ -80,19 +80,6 @@ MenuItems.forEach((MenuItem) => {
 
 const navbar = document.querySelector('.nav__wrapper');
 
-// // Обработчик события прокрутки страницы
-// window.addEventListener('scroll', function() {
-//     // Получаем текущую позицию скролла
-//     const scrollY = window.scrollY || window.pageYOffset;
-
-//     // Если пользователь проскролил на 100vh, то показываем навигационную полоску
-//     if (scrollY >= 100) {
-//         navbar.style.height = '50px';
-//     } else {
-//         navbar.style.height = '0'; // В противном случае скрываем ее
-//     }
-// });
-
 
 const minuteButtons = document.querySelectorAll('.minutes__btn');
 
@@ -105,12 +92,11 @@ minuteButtons.forEach(function(button) {
     });
 });
 
-// Получаем элементы
+
 const dropdowns = document.querySelectorAll('.dropdown-content-sort');
 const cosmetologyBtn = document.querySelector('.sort__btn.cosm');
 const cosmetologyDropdown = cosmetologyBtn.nextElementSibling;
 
-// Закрытие дропдауна при клике вне его области
 document.addEventListener('click', (event) => {
     const target = event.target;
 
@@ -120,8 +106,9 @@ document.addEventListener('click', (event) => {
         }
     });
 });
-
-// Отображение дропдауна при клике на "Cosmetology"
+if (window.innerWidth <= 500) {
+  cosmetologyDropdown.style.display = 'block';
+}
 cosmetologyBtn.addEventListener('click', () => {
     cosmetologyDropdown.style.display = 'block';
 });

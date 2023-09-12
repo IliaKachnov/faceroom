@@ -114,17 +114,26 @@
   }
   .blog__photo {
     height: 470px;
-    width: 340px;
+    max-width: 371px;
+    width: 100%;
     object-fit: cover;
   }
+  .blog__items {
+    display: flex;
+    flex-direction: column;
+  }
 }
+
 @media (max-width: 440px) {
   .blog__text {
     font-size: 36px;
   }
   .blog__photo {
-    width: 300px;
+    width: 100%;
     height: 450px;
+  }
+  .blog__home {
+    margin-top: 20px;
   }
   .blog__items {
     gap: 20px;

@@ -33,6 +33,21 @@ dropdownMenuItems.forEach((dropdownMenuItem) => {
   })
 })
 
+const founders = document.querySelectorAll('.founder');
+
+founders.forEach(function(founder) {
+    founder.addEventListener('click', function() {
+        const bioWrapper = founder.querySelector('.founder__bio-wrapper');
+        if (bioWrapper) {
+            if (bioWrapper.classList.contains('active')) {
+                bioWrapper.classList.remove('active');
+            } else {
+                bioWrapper.classList.add('active');
+            }
+        }
+    });
+});
+
 
 const dropdownNav = document.querySelector('.nav__dropdown');
 const dropdownMenuNav = document.querySelector('.dropdown-menu.top');
@@ -94,9 +109,17 @@ const swiper1 = new Swiper(".mySwiper1", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
+  }
+});
+
+const scrollLeftButton = document.querySelector('#scroll-left');
+const scrollRightButton = document.querySelector('#scroll-right');
+const block2 = document.querySelector('.values__items');
+
+scrollLeftButton.addEventListener('click', () => {
+  block2.scrollLeft -= 150;
+});
+
+scrollRightButton.addEventListener('click', () => {
+  block2.scrollLeft += 150;
 });
