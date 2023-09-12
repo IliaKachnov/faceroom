@@ -271,4 +271,28 @@ scrollRightButtonBlog.addEventListener('click', () => {
   blog.scrollLeft += 150;
 });
 
+const scrollLeftButtonBlogBig = document.querySelector('#scroll-blog-left');
+const scrollRightButtonBlogBig = document.querySelector('#scroll-blog-right');
+const blogBig = document.querySelector('.reviews__container');
+
+scrollLeftButtonBlogBig.addEventListener('click', () => {
+  blogBig.scrollLeft -= 150;
+});
+
+scrollRightButtonBlogBig.addEventListener('click', () => {
+  blogBig.scrollLeft += 150;
+});
+
+
+const scrollLeftButtonProducts = document.querySelector('#scroll-prod-left');
+const scrollRightButtonProducts = document.querySelector('#scroll-prod-right');
+const products = document.querySelector('.blog__items');
+
+scrollLeftButtonProducts.addEventListener('click', () => {
+  products.scrollLeft -= 200;
+});
+
+scrollRightButtonProducts.addEventListener('click', () => {
+  products.scrollLeft += 200;
+});
 

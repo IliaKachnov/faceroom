@@ -101,7 +101,6 @@ minuteButtons.forEach(function(button) {
 
 const dropdowns = document.querySelectorAll('.dropdown-content-sort');
 const cosmetologyBtn = document.querySelector('.sort__btn.cosm');
-// const cosmetologyDropdown = cosmetologyBtn.nextElementSibling;
 
 document.addEventListener('click', (event) => {
     const target = event.target;
@@ -112,27 +111,6 @@ document.addEventListener('click', (event) => {
         }
     });
 });
-
-// cosmetologyBtn.addEventListener('click', () => {
-//     cosmetologyDropdown.style.display = 'block';
-// });
-
-
-// const sortBtn = document.querySelector('.sort__btn.cosm');
-// const sortBtnDropdown = document.querySelector('.sort__btn-dropdown');
-// const sortDropdown = document.querySelector('.sort__dropdown');
-
-
-// sortBtn.addEventListener('click', () => {
-//   sortBtn.classList.toggle('active');
-//   sortBtnDropdown.classList.toggle("active")
-//   if (sortBtnDropdown.classList.contains('active')) {
-//     sortBtnDropdown.style.display = 'block';
-//   } else {
-//     sortBtnDropdown.style.display = 'none';
-//   }
-//   sortDropdown.classList.toggle('active');
-// });
 
 
 const scrollLeftButton = document.querySelector('#scroll-left');
@@ -145,4 +123,17 @@ scrollLeftButton.addEventListener('click', () => {
 
 scrollRightButton.addEventListener('click', () => {
   block2.scrollLeft += 150;
+});
+
+
+const scrollLeftButtonIntresting = document.querySelector('#scroll-intresting-left');
+const scrollRightButtonIntresting = document.querySelector('#scroll-intresting-right');
+const intresting = document.querySelector('#blog__items');
+
+scrollLeftButtonIntresting.addEventListener('click', () => {
+  intresting.scrollLeft -= 200;
+});
+
+scrollRightButtonIntresting.addEventListener('click', () => {
+  intresting.scrollLeft += 200;
 });

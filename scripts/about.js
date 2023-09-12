@@ -123,3 +123,17 @@ scrollLeftButton.addEventListener('click', () => {
 scrollRightButton.addEventListener('click', () => {
   block2.scrollLeft += 150;
 });
+
+
+
+const scrollLeftButtonHistory = document.querySelector('#scroll-history-left');
+const scrollRightButtonHistory = document.querySelector('#scroll-history-right');
+const history = document.querySelector('.values__items');
+
+scrollLeftButtonHistory.addEventListener('click', () => {
+  history.scrollLeft -= 150;
+});
+
+scrollRightButtonHistory.addEventListener('click', () => {
+  history.scrollLeft += 150;
+});
