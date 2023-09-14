@@ -4,10 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  font-family: 'ArialNarrow';
-  /* font-family:'Arial Narrow', arial; */
+  font-family: 'ArialNarrow';  
 }
 
 .wrapper {

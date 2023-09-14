@@ -36,7 +36,7 @@ window.addEventListener('scroll', function() {
 
     if (scrollY >= 300) {
         navbar.classList.add('active')
-        navbar.style.height = '61px';
+        navbar.style.height = '75px';
     } else {
         navbar.classList.remove('active')
         navbar.style.height = '0'; 
