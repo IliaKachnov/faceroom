@@ -685,7 +685,7 @@
   transition: all .3s ease;
 }
 .founder__bio-wrapper.active {
-  height: 150px;
+  height: 160px;
 }
 
 /* FOUNDER END */
@@ -852,6 +852,7 @@
 .blog__img {
   width: 392px;
   height: 394px;
+  transition: all .2s ease;
 }
 .blog__items {
   margin-top: 24px;
@@ -865,9 +866,17 @@
   display: none;
 }
 .blog__item {
-  width: 392px;
+  width: 394px;
   height: 528px;
 }
+.blog__img-wrapper {
+  overflow: hidden;
+}
+
+.blog__img:hover {
+  transform: scale(1.1);
+}
+
 .blog__item-title {
   color: var(--Black, #000);
   text-align: center;
@@ -882,6 +891,7 @@
   margin-bottom: 24px;
 }
 .blog__read {
+  display: block;
   margin-top: 24px;
   color: var(--Black, #000);
   text-align: center;
@@ -1553,7 +1563,7 @@
     scroll-behavior: smooth;
   }
   .values__arrows {
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .reviews__container::-webkit-scrollbar {
     display: none;
@@ -1688,6 +1698,9 @@
   .panel.active {
     justify-content: start;
   }
+  .panel.active.faq {
+    margin-left: 450px;
+  }
 }
 @media (max-width: 960px) {
   .care__line {
@@ -1750,6 +1763,11 @@
     margin-top: 230px;
   }
 }
+@media (max-width: 860px) {
+  .panel.active.faq {
+    margin-left: 300px;
+  }
+}
 @media (max-width: 850px) {
   .founder__photo {
     width: 260px;
@@ -1776,7 +1794,7 @@
     height: 330px;
   }
   .founder__line {
-    width: 270px;
+    /* width: 270px; */
     margin-left: 10px;
   }
   .founder__join {
@@ -1925,9 +1943,10 @@
     width: 300px;
     height: 150px;
   }
+  .franchise__photo-wrapper,
   .franchise__photo {
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
+    object-fit: cover;
   }
 }
 @media (max-width: 755px) {
@@ -2017,6 +2036,16 @@
   }
   .panel.active.faq {
     margin-top: 0;
+    margin-left: 0;
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .panel__wrapper.faq {
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .panel__wrapper-text.faq {
+    max-width: 100%;
   }
   .panel.faq {
     margin: 0;
@@ -2063,6 +2092,13 @@
   .panel__title.price {
     margin-top: 30px;
   }
+  .panel__wrapper {
+    max-width: 100%;
+  }
+  .panel__wrapper-text.price {
+    max-width: 609px;
+    width: 100%;
+  }
 }
 @media (max-width: 550px) {
   .banner {
@@ -2097,7 +2133,7 @@
     height: 400px;
   }
   .founder__line {
-    width: 340px;
+    max-width: 330px;
   }
   .founder__bio {
     width: 340px;
@@ -2207,9 +2243,12 @@
     width: 300px;
     height: 350px;
   }
-  .founder__line,
+  
   .founder__bio {
     width: 300px;
+  }
+  .founder__line {
+    width: 288px;
   }
 }
 

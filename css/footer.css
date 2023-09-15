@@ -421,24 +421,28 @@
     height: 288px;
   }
 }
-
-@media (max-width: 415px) {
-  .footer__addresses,
-  .form__fullname,
-  .form__contact,
-  .deposit__mobile-wrapper,
-  .terms__wrapper,
-  .footer__wrapper {
-    width: 288px;
-  }
-  .footer__wrapper {
-    padding-left: 0;
-  }
+@media (max-width: 500px) {
   .footer__info {
     padding-right: 0;
   }
   .footer {
-    padding-right: 0;
-    padding-left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer__dropdown {
+    margin-top: 0;
+  }
+  .footer {
+    margin-top: 40px;
+  }
+  .map__mobile {
+    max-width: 100%;
+    width: 100%;
+  }
+  .map__mobile-img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
+

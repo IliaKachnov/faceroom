@@ -318,7 +318,7 @@
   margin-top: 128px;
 }
 .values__items {
-  max-width: 1260px;
+  max-width: 1224px;
   width: 100%;
   margin: 0 auto;
   margin-top: 24px;
@@ -340,7 +340,7 @@
   border-left: 1px solid #000;
 }
 .values__company {
-  max-width: 1260px;
+  max-width: 1224px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -421,6 +421,7 @@
   width: 100%;
   /* height: 495px; */
   height: 100%;
+  object-fit: cover;
 }
 
 .question {
@@ -512,7 +513,7 @@
   transition: all 0.3s ease-out;
 
   width: 808px;
-  margin-left: 300px;
+  margin-left: 350px;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -695,6 +696,11 @@
 }
 .values__arrow-small {
   display: none;
+}
+@media (max-width:1240px) {
+  .panel {
+    margin-left: 335px;
+  }
 }
 @media (max-width: 1200px) {
   .founder__photo {
@@ -991,7 +997,12 @@
   .values__item-text {
     height: 105px;
   }
+  .panel.faq {
+    max-width: 680px;
+    width: 100%;
+  }
   .panel.active.faq {
+    width: 100%;
     margin-top: 0;
   }
   .panel.faq {
@@ -999,11 +1010,19 @@
     padding-left: 0;
     justify-content: start;
   }
+
   .panel__wrapper {
+    max-width: 680px;
+    width: 100%;
     margin-top: 0;
   }
   .panel__wrapper-text {
     margin-top: 0;
+  }
+  .panel__wrapper,
+  .panel__wrapper-text {
+    margin-right: 0;
+    width: 100%;
   }
 }
 @media (max-width: 640px) {
@@ -1056,7 +1075,7 @@
     height: 400px;
   }
   .founder__line {
-    width: 340px;
+    width: 330px;
   }
   .founder__bio {
     width: 340px;
@@ -1104,6 +1123,15 @@
   .profit__wrapper {
     gap: 10px;
   }
+  .founders,
+  .about__home-wrapper,
+  .care,
+  .values,
+  .profit,
+  .question {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 @media (max-width: 470px) {
@@ -1146,8 +1174,11 @@
     width: 300px;
     height: 350px;
   }
-  .founder__line,
+  
   .founder__bio {
     width: 300px;
+  }
+  .founder__line {
+    width: 290px;
   }
 }
